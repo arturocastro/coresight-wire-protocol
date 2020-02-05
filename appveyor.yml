@@ -1,10 +1,10 @@
 image:
-  - Visual Studio 2017
+  - Visual Studio 2015
 
 environment:
-  BOOST_ROOT: C:\Libraries\boost_1_64_0
+  BOOST_ROOT: C:\Libraries\boost_1_63_0
   
 build_script:
   - cmd: tree %BOOST_ROOT%
   - cmd: build.bat Release
-  
+  - cmd: cd build\win_32-x86_64\Release && msbuild amis_poc.sln
