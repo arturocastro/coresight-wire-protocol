@@ -6,4 +6,4 @@ environment:
   
 build_script:
   - cmd: build.bat Release
-  - cmd: cd build\win_32-x86_64\Release && msbuild amis_poc.sln
+  - cmd: cd build\win_32-x86_64\Release && msbuild amis_poc.sln && ctest -C "Release"
