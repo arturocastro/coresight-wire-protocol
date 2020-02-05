@@ -7,4 +7,4 @@ environment:
   
 build_script:
   - cmd: build.bat Debug
-  - cmd: cd build\win_32-x86_64\Release && msbuild amis_poc.sln && ctest -C "Debug"
+  - cmd: cd build\win_32-x86_64\Debug && msbuild amis_poc.sln && ctest -C "Debug"
