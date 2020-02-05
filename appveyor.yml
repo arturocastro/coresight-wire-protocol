@@ -5,10 +5,8 @@ environment:
   # Use boost 1.63 instead of 1.64, as that's what appveyor provides
   BOOST_ROOT: C:\Libraries\boost_1_63_0
 
-build_dbg_script:
+build_script:
   - cmd: build.bat Debug
   - cmd: cd build\win_32-x86_64\Debug && msbuild amis_poc.sln && ctest -C Debug
-
-build_rel_script:
   - cmd: build.bat Release
   - cmd: "cd build\\win_32-x86_64\\Debug && msbuild amis_poc.sln /p:Configuration=Release && ctest -C Release"
