@@ -5,5 +5,5 @@ environment:
   BOOST_ROOT: C:\Libraries\boost_1_64_0
   
 build_script:
-  - cmd: build.bat Release.
+  - cmd: build.bat Release
   
