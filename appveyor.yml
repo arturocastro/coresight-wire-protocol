@@ -1,0 +1,9 @@
+image:
+  - Visual Studio 2015
+
+environment:
+  BOOST_ROOT: C:\Libraries\boost_1_64_0
+  
+build_script:
+  - cmd: build.bat Release.
+  
